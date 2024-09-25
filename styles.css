@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+#auth-container, #movie-list, #theatre {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label, input {
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Styles for seat grid */
+.seat-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 40px); /* 12 seats per row */
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.seat {
+    width: 40px;
+    height: 40px;
+    background-color: #28a745;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.seat:hover {
+    background-color: #ffc107; /* Highlight on hover */
+}
+
+.seat.selected {
+    background-color: #dc3545; /* Color for selected seats */
+}
+
+.row-label {
+    grid-column: 1 / -1;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}
